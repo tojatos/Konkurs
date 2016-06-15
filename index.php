@@ -18,27 +18,8 @@
     <link rel="stylesheet" href="StyleSheets/Main.css" type="text/css" />
 </head>
 <body>
-    <?php require("Includes/errorMessage.php"); ?>
     <div id="container">
-        <div id="hamburger"></div>
-        <header>
-            Witaj na mojej stronie testowej
-            <div id="clock"></div>
-        </header>
-        <nav>
-            <?php require("Includes/Menu/menu.php"); ?>
-        </nav>
-        <main>
-            <section id="blockContainer">
-            <?php require("Includes/setContent.php"); ?>
-            </section>
-        </main>
-        <footer>
-            Site made by
-            <a target="_blank" href="https://www.facebook.com/krzysztof.ruczkowski">Krzysztof Ruczkowski</a>
-            . All rights reserved&copy;. Mail:
-            <a target="_blank" href="mailto:tojatos@gmail.com">tojatos@gmail.com</a>
-        </footer>
+        Kappa
     </div>
 </body>
 </html>
