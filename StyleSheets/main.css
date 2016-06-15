@@ -1,5 +1,6 @@
 html {
-    background: #010314;
+    background: url("../Images/Background/zwartevilt.png") black;
+    cursor: default;
     margin: 0;
 }
 
@@ -10,25 +11,52 @@ body {
 }
 
 #container {
+    background: url("../Images/Background/simple_dashed.png") black;
     font-size: 20px;
     color: #e2d4d4;
     font-family: 'Lato', sans-serif;
-    cursor: default;
+    width: 1000px;
+    min-height: 600px;
+    margin: 0 auto;
+    padding: 0 5px;
 }
-.h1 {
+h1 {
     font-size: 50px;
     text-align: center;
+    margin: 0;
 }
 
-.h2 {
+h2 {
     font-size: 24px;
+    text-align: center;
+    margin: 0;
 }
 
-.h3 {
+h3 {
     font-size: 18px;
+    text-align: center;
+    margin: 0;
 }
 a {
     text-decoration: none;
     color: #4079de;
 
+}
+.blockContainer {
+  width: 400px;
+  margin: 0 auto;
+}
+.block {
+  margin: 5px;
+  width: 190px;
+  height: 190px;
+  display: flex;
+  justify-content: center; /* align horizontal */
+  align-items: center; /* align vertical */
+  float: left;
+  background: #55aa44;
+  color: black;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
 }

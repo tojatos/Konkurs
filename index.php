@@ -2,7 +2,7 @@
 <html lang="pl">
 <head>
     <!-- title -->
-    <title>Strona główna</title>
+    <title>Main page</title>
     <!-- charset -->
     <meta charset="utf-8" />
     <!-- meta -->
@@ -19,7 +19,16 @@
 </head>
 <body>
     <div id="container">
-        Kappa123
+      <h1>Strona główna</h1>
+      <div class="blockContainer">
+        <a href="#"><div class="block">INPUT TO BOOK DATABASE</div></a>
+        <a href="#"><div class="block">GET FROM BOOK DATABASE</div></a>
+        <div style="clear: both;"></div>
+        <a href="#"><div class="block">INPUT TO ANIME DATABASE</div></a>
+        <a href="#"><div class="block">GET FROM ANIME DATABASE</div></a>
+        <div style="clear: both;"></div>
+      </div>
+
     </div>
 </body>
 </html>
