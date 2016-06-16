@@ -60,3 +60,59 @@ a {
   font-size: 30px;
   text-align: center;
 }
+.goToMainPage {
+  margin: 5px;
+  width: 45px;
+  height: 45px;
+  background: yellow;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+form {
+  width: 900px;
+  margin: 0 50px;
+}
+input[type="text"] {
+  width: 900px;
+  height: 20px;
+  font-size: 18px;
+  border: 0;
+}
+select {
+  width: 900px;
+  height: 22px;
+  font-size: 18px;
+  padding: 0;
+  border: 0;
+}
+input[type="submit"] {
+  width: 200px;
+  height: 50px;
+  font-size: 25px;
+  color: white;
+  background: #aa22aa;
+  padding: 1px;
+  margin: 10px auto;
+  display: block;
+  border: none;
+  cursor: pointer;
+    -webkit-box-shadow: 5px 5px 10px 0px #afa;
+    -moz-box-shadow:    5px 5px 10px 0px #afa;
+    box-shadow:         5px 5px 10px 0px #afa;
+}
+input[type="submit"]:hover{
+  -webkit-box-shadow: 5px 5px 10px 0px #fff;
+  -moz-box-shadow:    5px 5px 10px 0px #fff;
+  box-shadow:         5px 5px 10px 0px #fff;
+
+}
+textarea {
+  width: 900px;
+  height: 100px;
+  font-size: 18px;
+  border: 0;
+}
+.label {
+  width: 50px !important;
+}

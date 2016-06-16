@@ -19,13 +19,13 @@
 </head>
 <body>
     <div id="container">
-      <h1>Strona główna</h1>
+      <h1>Main page</h1>
       <div class="blockContainer">
-        <a href="#"><div class="block">INPUT TO BOOK DATABASE</div></a>
-        <a href="#"><div class="block">GET FROM BOOK DATABASE</div></a>
+        <a href="Includes/Pages/insertQuotePage.php"><div class="block">ISERT TO QUOTE DATABASE</div></a>
+        <a href="Includes/Pages/getQuotePage.php"><div class="block">GET FROM QUOTE DATABASE</div></a>
         <div style="clear: both;"></div>
-        <a href="#"><div class="block">INPUT TO ANIME DATABASE</div></a>
-        <a href="#"><div class="block">GET FROM ANIME DATABASE</div></a>
+        <a href="Includes/Pages/insertMusicPage.php"><div class="block">ISERT TO MUSIC DATABASE</div></a>
+        <a href="Includes/Pages/getMusicPage.php"><div class="block">GET FROM MUSIC DATABASE</div></a>
         <div style="clear: both;"></div>
       </div>
 
