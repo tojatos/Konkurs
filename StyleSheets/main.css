@@ -71,7 +71,7 @@ a {
 }
 form {
   width: 900px;
-  margin: 0 50px;
+  margin: 0 50px 50px 50px;
 }
 input[type="text"] {
   width: 900px;
