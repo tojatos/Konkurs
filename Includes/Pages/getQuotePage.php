@@ -21,7 +21,30 @@ try
 	if($connection->connect_errno!=0) throw new Exception(mysqli_connect_errno());
 	else
 	{
-      $result = $connection->query("SELECT ID, quote, whoAdded FROM quotes WHERE ID = 1");
+      $getLastID = $connection->query("SELECT ID FROM quotes ORDER BY ID DESC LIMIT 1;");
+      if ($getLastID)
+      {
+        if ($getLastID->num_rows > 0)
+        {
+          while($row = $getLastID->fetch_assoc())
+          {
+            $lastID = $row['ID'];
+          }
+          $getSuccessful = true;
+          $randomID = rand(1, $lastID);
+        }
+        else
+        {
+          $getSuccessful = false;
+          $randomID = 1;
+        }
+      }
+			else
+      {
+        throw new Exception ($connection->error);
+        $getSuccessful = false;
+      }
+      $result = $connection->query("SELECT ID, quote, whoAdded FROM quotes WHERE ID = $randomID");
 			if ($result)
       {
         if ($result->num_rows > 0)
@@ -31,8 +54,9 @@ try
             $ID = $row['ID'];
             $quote =  $row['quote'];
             $whoAdded = $row['whoAdded'];
-            $getSuccessful = true;
           }
+          $getSuccessful = true;
+          $quote = preg_replace('/\[&tab\]/', "<br>&nbsp&nbsp&nbsp&nbsp", $quote);
         }
         else $getSuccessful = false;
       }

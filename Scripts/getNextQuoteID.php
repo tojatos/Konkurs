@@ -16,10 +16,15 @@ try
           while($row = $result->fetch_assoc())
           {
             $ID =  $row['ID'];
-            $getSuccessful = true;
           }
+          $getSuccessful = true;
+          echo ++$ID;
         }
-        else $getSuccessful = false;
+        else
+        {
+          $getSuccessful = false;
+          echo 1;
+        }
       }
       else
       {
@@ -31,8 +36,7 @@ try
 }
 catch(Exception $e)
 {
-  echo 'Błąd serwera!<br>';
-  echo 'Informacja deweloperska: '.$e;
+	echo 'Błąd serwera!<br>';
+	echo 'Informacja deweloperska: '.$e;
 }
-echo ++$ID;
 ?>
