@@ -6,8 +6,6 @@ $author = $_POST["author"];
 $quote = $_POST["quote"];
 $whoAdded = $_POST["whoAdded"];
 
-$quote = preg_replace('/ {2,}/', '[&tab]', $quote);
-
 require_once "connect.php";
 mysqli_report(MYSQLI_REPORT_STRICT);
 

@@ -1,5 +1,5 @@
 html {
-    background: url("../Images/Patterns/zwartevilt.png") black;
+    background: url("../Images/Background/zwartevilt.png") black;
     cursor: default;
     margin: 0;
 }
@@ -11,7 +11,7 @@ body {
 }
 
 #container {
-    background: url("../Images/Patterns/simple_dashed.png") black;
+    background: url("../Images/Background/simple_dashed.png") black;
     font-size: 20px;
     color: #e2d4d4;
     font-family: 'Lato', sans-serif;
@@ -115,33 +115,4 @@ textarea {
 }
 .label {
   width: 50px !important;
-}
-blockquote{
-  display:block;
-  width: 900px;
-  background: #fff;
-  padding: 15px 20px 15px 45px;
-  margin: 0 auto;
-  position: relative;
-  font-size: 16px;
-  line-height: 1.2;
-  color: #000;
-  text-align: justify;
-  background: url("../Images/Patterns/brushed.png") black;
-
-
-}
-blockquote::before{
-  content: "\201C"; /*Unicode for Left Double Quote*/
-
-  /*Font*/
-  font-family: Georgia, serif;
-  font-size: 80px;
-  font-weight: bold;
-  color: #000;
-
-  /*Positioning*/
-  position: absolute;
-  left: 10px;
-  top:5px;
 }
