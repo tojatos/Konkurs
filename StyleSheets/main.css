@@ -60,6 +60,10 @@ a {
   font-size: 30px;
   text-align: center;
 }
+.text{
+  padding: 10px;
+  font-family: 'TimesNewRoman', sans-serif;
+}
 .goToMainPage {
   margin: 5px;
   width: 45px;

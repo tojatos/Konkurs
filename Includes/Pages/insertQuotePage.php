@@ -23,6 +23,14 @@
       <form action="../../Scripts/resetQuoteID.php" method="post">
         <input type="submit" value="Reset Quote ID">
       </form>
+      <div class="text">
+        <ul>
+          Założenia cytatów:
+          <li>Nie spoilerują książki</li>
+          <li>Na ich podstawie można określić tytuł książki, jednak powinno to wynikać z kontekstu</li>
+          <li>Najlepiej jeżeli zachęcają do przeczytania książki</li>
+        </ul>
+      </div>
     </div>
 </body>
 </html>
